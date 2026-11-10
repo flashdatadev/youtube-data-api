@@ -1,0 +1,4 @@
+video_id,source_url,query,provider,status,title,language,transcript,errors
+demoVid0001,https://www.youtube.com/watch?v=demoVid0001,python tutorial,synthetic_demo,complete,Python functions — synthetic example,en,A function groups reusable Python instructions.,{}
+demoVid0002,https://www.youtube.com/watch?v=demoVid0002,python tutorial,synthetic_demo,complete,Reading JSON — synthetic example,en,Read JSON into a Python dictionary.,{}
+demoVid0003,https://www.youtube.com/watch?v=demoVid0003,python tutorial,synthetic_demo,complete,Exporting CSV — synthetic example,en,Write a header and one CSV row per video.,{}

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flashdata-youtube-data-toolkit"
+version = "0.1.0"
+description = "Runnable Python YouTube Data API examples, transcripts, and dataset exports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "FlashData" }]
+dependencies = [
+    "flashdata==1.2.0",
+    "google-api-python-client>=2.150,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1", "build>=1,<2"]
+
+[project.urls]
+Homepage = "https://github.com/flashdatadev/youtube-data-api"
+Issues = "https://github.com/flashdatadev/youtube-data-api/issues"
+Documentation = "https://flashdata.dev/docs"
+
+[tool.setuptools.packages.find]
+include = ["examples*"]
+
+[tool.setuptools.package-data]
+examples = ["fixtures/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
