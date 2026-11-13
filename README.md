@@ -234,6 +234,8 @@ Yes. Only `YOUTUBE_API_KEY` is needed for those examples. The offline dataset de
 
 These examples collect structured data. For media files and delivery to cloud storage, see [FlashData's YouTube Download API](https://flashdata.dev/products/youtube-download?utm_source=github&utm_medium=readme&utm_campaign=youtube-data-api).
 
+Use the video IDs from your search or dataset export with the [YouTube Video Download API Toolkit](https://github.com/flashdatadev/youtube-video-download-api). Its Python examples deliver MP4, MP3 or clips to your storage and support bulk collections with saved job IDs and recovery.
+
 **Can I collect every video from a channel?**
 
 The Google channel example returns the uploads playlist ID. Pass it to the playlist example and choose an explicit limit. Search results are not a complete channel inventory. See [pagination and quotas](docs/pagination-and-quotas.md).
